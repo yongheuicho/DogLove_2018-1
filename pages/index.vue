@@ -23,16 +23,23 @@
     </article>
     <div class="columns">
       <div class="column">
-        <div class="container">
+        <div class="notification is-info">
           <figure class="image is-squre">
             <img src="https://upload.wikimedia.org/wikipedia/commons/d/d9/Collage_of_Nine_Dogs.jpg" alt="">
           </figure>
         </div>
       </div>
       <div class="column">
-        <figure class="image is-squre">
-          <img v-bind:src="image" alt="">
-        </figure>
+        <div class="message is-info">
+          <div class="message-header">
+            <p>오늘의 개 사진</p>
+          </div>
+          <div class="message-body">
+            <figure class="image is-squre">
+              <img v-bind:src="image" alt="">
+            </figure>
+          </div>
+        </div>
       </div>
     </div>
   </section>
