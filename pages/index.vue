@@ -31,7 +31,7 @@
       </div>
       <div class="column">
         <figure class="image is-squre">
-          <img src="" alt="">
+          <img v-bind:src="image" alt="">
         </figure>
       </div>
     </div>
@@ -40,4 +40,13 @@
 
 <script>
   import axios from 'axios';
+  export default {
+    data() {
+      return {};
+    },
+    async asyncData() {
+      const myImage = await axios.get('https://dog.ceo/api/breeds/image/random');
+      return { image: myImage.data.message };
+    }
+  };
 </script>
