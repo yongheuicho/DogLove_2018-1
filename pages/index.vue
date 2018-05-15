@@ -21,6 +21,11 @@
           
           개의 수명은 보통 12 - 16년 정도이지만, 최근 장수하는 개가 늘어나는 추세이다.[14] 2001년 생물학자 레이 쿠니퍼는 전 세계 개의 개체수를 약 4억 마리 정도로 추정했고[15], 2013년 하지홍은 10억 마리 이상으로 추정했다.[16]</div>
     </article>
+    <div class="container">
+      <figure class="image is-squre">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/d/d9/Collage_of_Nine_Dogs.jpg" alt="">
+      </figure>
+    </div>
   </section>
 </template>
 
