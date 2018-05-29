@@ -8,14 +8,22 @@
                 </div>
             </div>
         </article>
-
+        <article class="notification">
+            <figure class="image is-square">
+                <img :src="image" alt="">
+            </figure>
+        </article>
     </section>
 </template>
 <script>
+    import axios from 'axios';
+
     export default {
-        asyncData({ params }) {
+        async asyncData({ params }) {
+            const image = await axios.get(`https://dog.ceo/api/breed/${params.dog}/images/random`);
             return {
-                dogName: params.dog
+                dogName: params.dog,
+                image: image.data.message
             };
         }
     };
