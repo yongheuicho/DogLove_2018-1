@@ -8,10 +8,15 @@
                 </div>
             </div>
         </article>
-        <article class="notification">
-            <figure class="image is-square">
-                <img :src="image" alt="">
-            </figure>
+        <article class="notification is-success">
+            <div class="columns">
+                <div v-for="image in images" :key="image" class="column">
+                    <figure class="image is-square">
+                        <img :src="image" alt="">
+                    </figure>
+                </div>
+
+            </div>
         </article>
     </section>
 </template>
@@ -20,10 +25,15 @@
 
     export default {
         async asyncData({ params }) {
-            const image = await axios.get(`https://dog.ceo/api/breed/${params.dog}/images/random`);
+            let maxImg = 4;
+            let images = [];
+            for (let i = 0; i < maxImg; i++) {
+                const image = await axios.get(`https://dog.ceo/api/breed/${params.dog}/images/random`);
+                images.push(image.data.message);
+            }
             return {
                 dogName: params.dog,
-                image: image.data.message
+                images: images
             };
         }
     };
