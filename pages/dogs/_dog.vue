@@ -22,11 +22,12 @@
                 <p>{{dogName.toUpperCase()}}의 아품종</p>
             </div>
             <div class="message-body">
-                <ol>
+                <ol v-if="dogList.length">
                     <li v-for="subdog in dogList" :key="subdog">
                         {{subdog.toUpperCase()}}
                     </li>
                 </ol>
+                <ol v-else>관련 정보가 없습니다.</ol>
             </div>
         </article>
     </section>

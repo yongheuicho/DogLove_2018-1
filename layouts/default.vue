@@ -18,10 +18,7 @@
     <nuxt/>
     <footer class="footer has-text-centered">
       <span class="content">
-        <figure class="image is-32x32 is-flex">
-          <img src="~assets/dog.png" alt="">
-        </figure>
-        2018년 목원대학교 개사랑. 모든 저작권은 개사랑에 있습니다.
+        <img src="~assets/dog.png" alt="" width="32" height="32"> 2018년 목원대학교 개사랑. 모든 저작권은 개사랑에 있습니다.
       </span>
     </footer>
   </div>
