@@ -3,8 +3,8 @@
     <nav class="navbar">
       <div class="navbar-brand">
         <nuxt-link to="/" class="navbar-item">
-          <figure class="image is-64x64">
-            <img src="~static/dogPaw.png" alt="">
+          <figure class="image is-48x48">
+            <img class="image" src="~static/dogPaw.png" alt="">
           </figure>
         </nuxt-link>
       </div>
@@ -17,10 +17,12 @@
     </nav>
     <nuxt/>
     <footer class="footer has-text-centered">
-      <div>
-        <figure class="image is-32x32">
+      <span class="content">
+        <figure class="image is-32x32 is-flex">
           <img src="~assets/dog.png" alt="">
-        </figure> 2018년 목원대학교 개사랑. 모든 저작권은 개사랑에 있습니다.</div>
+        </figure>
+        2018년 목원대학교 개사랑. 모든 저작권은 개사랑에 있습니다.
+      </span>
     </footer>
   </div>
 </template>
