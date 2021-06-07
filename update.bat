@@ -1,3 +1,3 @@
 git add --all
-git commit -m "í•œê¸€ batch ìˆ˜ì •"
+git commit -m "ÇÑ±Û batch ´Ù½Ã ¼öÁ¤"
 git push -u origin master
