@@ -13,8 +13,8 @@
     "precommit": "npm run lint"
   },
   "dependencies": {
-    "axios": "^0.18.0",
-    "nuxt": "^1.0.0"
+    "axios": "^0.21.1",
+    "nuxt": "^2.2.0"
   },
   "devDependencies": {
     "babel-eslint": "^8.2.1",
